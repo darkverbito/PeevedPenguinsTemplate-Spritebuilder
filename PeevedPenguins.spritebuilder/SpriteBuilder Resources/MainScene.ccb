@@ -138,7 +138,7 @@
 				<key>children</key>
 				<array/>
 				<key>customClass</key>
-				<string></string>
+				<string>MainScene</string>
 				<key>displayName</key>
 				<string>PlaySign</string>
 				<key>memberVarAssignmentName</key>
@@ -200,7 +200,7 @@
 						<string>Block</string>
 						<key>value</key>
 						<array>
-							<string></string>
+							<string>play</string>
 							<integer>1</integer>
 						</array>
 					</dict>
