@@ -10,8 +10,8 @@
 
 @implementation MainScene
 
-//- (void)play {
-//    CCLOG(@"play button pressed");
-//}
+- (void)play {
+    CCLOG(@"play button pressed");
+}
 
 @end
