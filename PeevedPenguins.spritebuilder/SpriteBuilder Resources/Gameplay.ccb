@@ -1302,7 +1302,7 @@
 								<key>customClass</key>
 								<string></string>
 								<key>displayName</key>
-								<string>WaitingPenguin3</string>
+								<string>WaitingPenguin1</string>
 								<key>memberVarAssignmentName</key>
 								<string></string>
 								<key>memberVarAssignmentType</key>
@@ -1315,7 +1315,7 @@
 										<key>type</key>
 										<string>StringSimple</string>
 										<key>value</key>
-										<string></string>
+										<string>WaitingPenguin1</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -1377,7 +1377,7 @@
 										<key>type</key>
 										<string>StringSimple</string>
 										<key>value</key>
-										<string></string>
+										<string>WaitingPenguin2</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -1426,7 +1426,7 @@
 								<key>customClass</key>
 								<string></string>
 								<key>displayName</key>
-								<string>WaitingPenguin1</string>
+								<string>WaitingPenguin3</string>
 								<key>memberVarAssignmentName</key>
 								<string></string>
 								<key>memberVarAssignmentType</key>
@@ -1439,7 +1439,7 @@
 										<key>type</key>
 										<string>StringSimple</string>
 										<key>value</key>
-										<string></string>
+										<string>WaitingPenguin3</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -2232,42 +2232,6 @@
 	<array>
 		<dict>
 			<key>autoPlay</key>
-			<false/>
-			<key>callbackChannel</key>
-			<dict>
-				<key>keyframes</key>
-				<array/>
-				<key>type</key>
-				<integer>12</integer>
-			</dict>
-			<key>chainedSequenceId</key>
-			<integer>-1</integer>
-			<key>length</key>
-			<real>10</real>
-			<key>name</key>
-			<string>BlinkAndJump</string>
-			<key>offset</key>
-			<real>0.0</real>
-			<key>position</key>
-			<real>0.0</real>
-			<key>resolution</key>
-			<real>30</real>
-			<key>scale</key>
-			<real>128</real>
-			<key>sequenceId</key>
-			<integer>0</integer>
-			<key>soundChannel</key>
-			<dict>
-				<key>isExpanded</key>
-				<false/>
-				<key>keyframes</key>
-				<array/>
-				<key>type</key>
-				<integer>11</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>autoPlay</key>
 			<true/>
 			<key>callbackChannel</key>
 			<dict>
@@ -2281,7 +2245,7 @@
 			<key>length</key>
 			<real>10</real>
 			<key>name</key>
-			<string>Untitled Timeline</string>
+			<string>Default</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
@@ -2291,7 +2255,7 @@
 			<key>scale</key>
 			<real>128</real>
 			<key>sequenceId</key>
-			<integer>1</integer>
+			<integer>0</integer>
 			<key>soundChannel</key>
 			<dict>
 				<key>isExpanded</key>
