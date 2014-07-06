@@ -122,6 +122,7 @@ static const float MIN_SPEED = 5.f;
         
         // transform the world position to the node space to which the penguin will be added (_physicsNode)
         _currentPenguin.position = [_physicsNode convertToNodeSpace:penguinPosition];
+        _currentPenguin.launched = TRUE;
         
         // add it to the physics world
         [_physicsNode addChild:_currentPenguin];
