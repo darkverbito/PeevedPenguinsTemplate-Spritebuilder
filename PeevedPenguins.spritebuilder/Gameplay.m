@@ -58,7 +58,7 @@ static const int MAX_THROWS = 3;
     _currentPenguin = nil;
     [_contentNode stopAction:_followPenguin];
     
-    if(_numThrowsRemain > 1) {
+    if(_numThrowsRemain > 0) {
         CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(0, 0)];
         [_contentNode runAction:actionMoveTo];
     }
