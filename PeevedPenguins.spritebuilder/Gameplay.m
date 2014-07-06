@@ -114,6 +114,13 @@ static const int MAX_THROWS = 3;
     // start catapult dragging when a touch inside of the catapult arm occurs
     if (CGRectContainsPoint([_catapultArm boundingBox], touchLocation))
     {
+        CCNode* animatedPenguin = [_contentNode getChildByName:[NSString stringWithFormat:@"WaitingPenguin%d", _numThrowsRemain] recursively:TRUE];
+        if(animatedPenguin) {
+            animatedPenguin.visible = FALSE;
+        }
+        
+        _numThrowsRemain--;
+        
         // move the mouseJointNode to the touch position
         _mouseJointNode.position = touchLocation;
         
@@ -149,13 +156,6 @@ static const int MAX_THROWS = 3;
 - (void)releaseCatapult {
     if (_mouseJoint != nil)
     {
-        CCNode* animatedPenguin = [_contentNode getChildByName:[NSString stringWithFormat:@"WaitingPenguin%d", _numThrowsRemain] recursively:TRUE];
-        if(animatedPenguin) {
-            animatedPenguin.visible = FALSE;
-        }
-            
-        _numThrowsRemain--;
-        
         // releases the joint and lets the catapult snap back
         [_mouseJoint invalidate];
         _mouseJoint = nil;
