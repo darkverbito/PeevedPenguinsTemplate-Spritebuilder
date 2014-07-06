@@ -38,8 +38,8 @@
     [_physicsNode addChild:penguin];
     
     // manually create & apply a force to launch the penguin
-    CGPoint launchDirection = ccp(.75, -.05);
-    CGPoint force = ccpMult(launchDirection, 5000);
+    CGPoint launchDirection = ccp(.95, -.05);
+    CGPoint force = ccpMult(launchDirection, 6000);
     [penguin.physicsBody applyForce:force];
     
     // ensure followed object is in visible are when starting
