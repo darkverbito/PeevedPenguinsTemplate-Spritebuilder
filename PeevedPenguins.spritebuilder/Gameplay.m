@@ -21,6 +21,11 @@
     CCPhysicsJoint *_mouseJoint;
 }
 
+-(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair seal:(CCNode *)nodeA wildcard:(CCNode *)nodeB
+{
+    CCLOG(@"Something collided with a seal!");
+}
+
 // is called when CCB file has completed loading
 - (void)didLoadFromCCB {
     // tell this scene to accept touches
@@ -28,6 +33,8 @@
     
     CCScene *level = [CCBReader loadAsScene:@"Levels/Level1"];
     [_levelNode addChild:level];
+    
+    _physicsNode.collisionDelegate = self;
     
     // _physicsNode.debugDraw = TRUE;
     
