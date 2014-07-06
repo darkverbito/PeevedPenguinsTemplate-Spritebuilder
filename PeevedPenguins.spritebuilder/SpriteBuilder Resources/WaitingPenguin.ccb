@@ -2301,8 +2301,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
@@ -2350,15 +2348,15 @@
 				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
-			<integer>0</integer>
+			<integer>-1</integer>
 			<key>length</key>
 			<real>4</real>
 			<key>name</key>
-			<string>WaitingPenguinAnimation</string>
+			<string>WaitingPenguin</string>
 			<key>offset</key>
-			<real>0.0</real>
+			<real>0.11510419845581055</real>
 			<key>position</key>
-			<real>0.76666665077209473</real>
+			<real>2.4666666984558105</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
