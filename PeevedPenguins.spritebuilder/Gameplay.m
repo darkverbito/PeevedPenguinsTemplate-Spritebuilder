@@ -11,6 +11,7 @@
 #import "Penguin.h"
 
 static const float MIN_SPEED = 5.f;
+static const int MAX_THROWS = 3;
 
 @implementation Gameplay {
     CCNode *_catapultArm;
@@ -25,6 +26,7 @@ static const float MIN_SPEED = 5.f;
     CCPhysicsJoint *_mouseJoint;
     
     CCAction *_followPenguin;
+    int _numThrowsRemain;
 }
 
 - (void)update:(CCTime)delta
@@ -93,6 +95,8 @@ static const float MIN_SPEED = 5.f;
     CCScene *level = [CCBReader loadAsScene:@"Levels/Level1"];
     [_levelNode addChild:level];
     
+    _numThrowsRemain = MAX_THROWS;
+    
     _physicsNode.collisionDelegate = self;
     
     // _physicsNode.debugDraw = TRUE;
@@ -145,6 +149,13 @@ static const float MIN_SPEED = 5.f;
 - (void)releaseCatapult {
     if (_mouseJoint != nil)
     {
+        CCNode* animatedPenguin = [_contentNode getChildByName:[NSString stringWithFormat:@"WaitingPenguin%d", _numThrowsRemain] recursively:TRUE];
+        if(animatedPenguin) {
+            animatedPenguin.visible = FALSE;
+        }
+            
+        _numThrowsRemain--;
+        
         // releases the joint and lets the catapult snap back
         [_mouseJoint invalidate];
         _mouseJoint = nil;
