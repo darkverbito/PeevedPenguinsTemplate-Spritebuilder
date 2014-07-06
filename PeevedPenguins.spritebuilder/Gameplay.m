@@ -114,7 +114,8 @@ static const int MAX_THROWS = 3;
     // start catapult dragging when a touch inside of the catapult arm occurs
     if (CGRectContainsPoint([_catapultArm boundingBox], touchLocation))
     {
-        CCNode* animatedPenguin = [_contentNode getChildByName:[NSString stringWithFormat:@"WaitingPenguin%d", _numThrowsRemain] recursively:TRUE];
+        NSString* nodeName = [NSString stringWithFormat:@"WaitingPenguin%d", _numThrowsRemain];
+        CCNode* animatedPenguin = [_contentNode getChildByName:nodeName recursively:TRUE];
         if(animatedPenguin) {
             animatedPenguin.visible = FALSE;
         }
